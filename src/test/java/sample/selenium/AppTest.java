@@ -21,22 +21,22 @@ public class AppTest {
 //    	app.someMethod(0, 0, 0, 0);
 //    }
 //
-	@Test
-	public void testQiita() throws InterruptedException {
-		// Optional. If not specified, WebDriver searches the PATH for chromedriver.
-		System.setProperty("webdriver.chrome.driver", "/Users/sho_shimizu/Downloads/soft/chromedriver");
-		WebDriver driver = new ChromeDriver();
-
-		driver.get("https://qiita.com/naotawool/items/6512ecbe2fd006dacfd2");
-
-		WebElement title = driver.findElement(By.className("it-Header_title"));
-		String actual = title.getText(); // AssertJ版：テストでよく使う検証メソッド一覧
-		String expected = "AssertJ版：テストでよく使う検証メソッド一覧";
-		assertThat(actual, is(expected));
-
-		driver.quit();
-	}
-
+//	@Test
+//	public void testQiita() throws InterruptedException {
+//		// Optional. If not specified, WebDriver searches the PATH for chromedriver.
+//		System.setProperty("webdriver.chrome.driver", "/Users/sho_shimizu/Downloads/soft/chromedriver");
+//		WebDriver driver = new ChromeDriver();
+//
+//		driver.get("https://qiita.com/naotawool/items/6512ecbe2fd006dacfd2");
+//
+//		WebElement title = driver.findElement(By.className("it-Header_title"));
+//		String actual = title.getText(); // AssertJ版：テストでよく使う検証メソッド一覧
+//		String expected = "AssertJ版：テストでよく使う検証メソッド一覧";
+//		assertThat(actual, is(expected));
+//
+//		driver.quit();
+//	}
+//
 //	@Test
 	public void testGoogleSearch() throws InterruptedException {
 		// Optional. If not specified, WebDriver searches the PATH for chromedriver.
@@ -58,17 +58,24 @@ public class AppTest {
 		assertThat(a, is(10)); // if a == 10
 	}
 
-	@Test
-	public void sampleTest2() {
-		int a = 10;
-		assertThat(a, is(greaterThan(5)));
-		assertThat(a, is(10));
-	}
+//	@Test
+//	public void sampleTest2() {
+//		int a = 10;
+//		assertThat(a, is(greaterThan(5)));
+//		assertThat(a, is(10));
+//	}
+//
+//	@Test
+//	public void sampleTest3() {
+//		int a = 10;
+//		assertThat(a, is(lessThan(15)));
+//		assertThat(a, is(10));
+//	}
+
 
 	@Test
-	public void sampleTest3() {
+	public void sampleJenkinsTest() {
 		int a = 10;
-		assertThat(a, is(lessThan(15)));
 		assertThat(a, is(10));
 	}
 
